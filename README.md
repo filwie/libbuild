@@ -19,6 +19,18 @@ To learn about `git subtree`, check the following articles:
  * https://developer.atlassian.com/blog/2015/05/the-power-of-git-subtree/
 
 ### Using from python scripts
+#### New way
+Now it is possible to use libbuild directly, without this `antipackage`. Install `libbuild` from github:
+``` sh
+pip install git+https://github.com/filwie/libbuild.git#egg=libbuild
+```
+
+Import straight from the code (no need for `check_antipackage` function as well):
+``` python
+import libbuild
+```
+
+#### Old way
 We recommend using https://github.com/ellisonbg/antipackage to import libbuild.py . First install `antipackage` using pip:
 
 ```sh
